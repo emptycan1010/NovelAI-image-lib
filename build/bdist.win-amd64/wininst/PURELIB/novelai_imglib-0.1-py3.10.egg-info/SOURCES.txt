@@ -1,8 +1,0 @@
-LICENSE
-setup.py
-novelai_imglib.egg-info/PKG-INFO
-novelai_imglib.egg-info/SOURCES.txt
-novelai_imglib.egg-info/dependency_links.txt
-novelai_imglib.egg-info/top_level.txt
-package/__init__.py
-package/requestimg.py
