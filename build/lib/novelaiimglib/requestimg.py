@@ -38,7 +38,7 @@ class reqform:
         )
 
     def saveIMG(self, filename):
-        e = open("filename.png", "wb")
+        e = open(filename + ".png", "wb")
         e.write(b64decode(self.r.text.split("\n")[-3][5:]))
         e.close()
 
