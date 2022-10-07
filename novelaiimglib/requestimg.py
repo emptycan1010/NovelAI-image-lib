@@ -1,7 +1,6 @@
 from base64 import b64decode
 import random
 import requests
-from IPython.display import Image, display
 
 
 class reqform:
