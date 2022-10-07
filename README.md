@@ -11,7 +11,7 @@ pip install git+https://github.com/emptycan1010/NovelAi-image-lib
 ```py
 import novelaiimglib
 
-novimg = novelaiimglib.reqform("Your Token Here")
+novimg = novelaiimglib.reqform("Your Token Here") # its like "Bearer abcdefg..."
 novimg.makeIMG("NSFW") # Prompt Here
 novimg.saveIMG("image") # save as "image.png"
 ```
