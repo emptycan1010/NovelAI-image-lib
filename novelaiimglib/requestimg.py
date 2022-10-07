@@ -8,7 +8,7 @@ class reqform:
     def __init__(self, auth):
         self.auth = auth
 
-    def makeIMG(self, prompt, seed=random.randint(0, 2**32-1)):
+    def makeIMG(self, prompt, seed=random.randint(0, 2**32 - 1)):
         self.r = requests.post(
             "https://api.novelai.net/ai/generate-image",
             headers={
