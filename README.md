@@ -1,5 +1,5 @@
 # NovelAI-image-lib
-Python Library for NovelAI Image generate
+Python Library for NovelAI Image generate using requests
 
 # Install
 ```py
