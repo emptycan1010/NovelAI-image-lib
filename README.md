@@ -18,4 +18,18 @@ novimg.saveIMG("image") # save as "image.png"
 novimg.imgvalue() # returns decoded value of image. 
 ```
 
-You can get Token using fiddler. Log in with Email and Password is not supported yet.
+# Get Token
+1. **First** Log in to https://novelai.net/image
+
+2. **Second** Turn on Developer tool using F12 or Ctrl + Shift + I
+
+3. **Third** Go to Application tab.
+
+4. **Fourth** See Local Storage. Look at the value of session key. 
+
+5. **Fifth** get value of "auth_token"
+
+6. **Use** 
+```py
+novelaiimglib.reqform("Bearer eyjASHx~~~blabla")
+```
