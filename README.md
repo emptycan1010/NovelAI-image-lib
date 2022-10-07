@@ -12,7 +12,8 @@ pip install git+https://github.com/emptycan1010/NovelAi-image-lib
 import novelaiimglib
 
 novimg = novelaiimglib.reqform("Your Token Here") # its like "Bearer abcdefg..."
-novimg.makeIMG("NSFW") # Prompt Here
+novimg.makeIMG("NSFW") # Prompt Here. Seed is your choice. 
+"""You can use seed like novimg.makeIMG("NSFW", "10382")"""
 novimg.saveIMG("image") # save as "image.png"
 ```
 
