@@ -8,7 +8,21 @@ class reqform:
     def __init__(self, auth):
         self.auth = auth
 
-    def makeIMG(self, prompt, seed=random.randint(0, 2**32 - 1)):
+    def makeIMG(
+        self,
+        prompt,
+        seed=random.randint(0, 2**32 - 1),
+        model="safe-diffusion",
+        width=512,
+        height=512,
+        scale=12,
+        sampler="k_euler_ancestral",
+        strength=0.7,
+        noise=0.2,
+        steps=28,
+        n_samples=1,
+    ):
+
         self.r = requests.post(
             "https://api.novelai.net/ai/generate-image",
             headers={
@@ -20,17 +34,17 @@ class reqform:
             },
             json={
                 "input": prompt,
-                "model": "safe-diffusion",
+                "model": model,
                 "parameters": {
-                    "width": 512,
-                    "height": 512,
-                    "scale": 12,
-                    "sampler": "k_euler_ancestral",
-                    "steps": 28,
+                    "width": width,
+                    "height": height,
+                    "scale": scale,
+                    "sampler": sampler,
+                    "steps": steps,
                     "seed": seed,
-                    "n_samples": 1,
-                    "strength": 0.7,
-                    "noise": 0.2,
+                    "n_samples": n_samples,
+                    "strength": strength,
+                    "noise": noise,
                     "ucPreset": 0,
                     "uc": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry",
                 },

@@ -1,8 +1,9 @@
 from setuptools import setup, find_packages
+from novelaiimglib import __version__
 
 setup(
     name="novelai-img-lib",
-    version="0.1.7",
+    version=__version__,
     description="NovelAI-Image Library for python ",
     author="emptycan1010",
     author_email="siro157@duck.com",
